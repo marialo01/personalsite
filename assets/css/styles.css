@@ -1,0 +1,196 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: #7fffd4;
+}
+nav{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+
+}
+nav.index-nav{
+  margin-bottom: 200px;
+}
+div{
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-toggler{
+  color:white;
+  background-color: white;
+}
+/*media quety*/
+@media only screen and (min-width: 768px) {
+  .start-image{
+    margin-top: -280px
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  .start-image{
+    margin-top: -200px
+  }
+  nav{
+
+    margin-bottom: 140px;
+  }
+}
+@media only screen and (max-width: 318px) {
+  .btn{
+    margin-top:2px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav{
+
+    margin-bottom: 120px;
+  }
+}
+
+
+
+.card{
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+
+
+
+cite{
+  color:black;
+}
+
+
+.progress{
+  background-color: #7fffd4;
+}
+
+
+.btn{
+margin-left: 4px;
+margin-right: 4px;
+}
+.btn-danger{
+  background-color: black;	;
+  border:#800000;
+}
+.presentation-text{
+  color:black;
+}
+h2{
+   color:black;
+}
+ul{
+  list-style: none;
+
+}
+
+
+
+.istruction-title{
+  color:#800000;
+}
+.list-presentation{
+  color:black;
+  text-align:left;
+  margin-top: 30px;
+
+}
+.weight-presentation{
+  font-weight: 600;
+  color:#800000;
+  font-size:20px;
+}
+.skills-part{
+  margin-top: 100px;
+
+}
+.progress{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.istruction-title{
+  margin-top: 50px;
+}
+.iam{
+  color: black;
+    font-size: 25px;
+    padding: 5px;
+    font-family: sans-serif;
+    display: inline;
+}
+.text{
+  color: white;
+    border-right: 2px solid white;
+    font-size: 25px;
+    display: inline;
+
+}
+.typed-cursor{
+  color: white;
+  background-color: white;
+}
+
+#works{
+  color:#800000;
+}
+label, input[type=text], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+input[type=text], textarea {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+
+  color: white;
+  padding: 10px 30px;
+border:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+.btn-primary{
+  color: white;
+  padding: 10px 30px;
+border:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer{
+ border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.typed-cursor{
+  background-color:#7fffd4;
+  color:#7fffd4;
+}
+/*green economy style*/
+@media only screen and (min-width: 768px){
+figure.plus-margin-bt {
+    margin: 0 0 18rem;
+}
+}
+@media only screen and (max-width: 992px){
+.list-group{
+  width: 60%;
+}
+}
+.list-group{
+  font-family: 'Roboto', sans-serif;
+}
