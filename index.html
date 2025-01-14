@@ -1,351 +1,206 @@
+
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <!--required meta tags-->
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport"     content="width=device-width, initial-scale=1">
-    <meta name='author'       content='Maria Lo Monaco'>
-    <meta name='description'  content='ciao , mi chiamo Maria Lo Monaco, studio marketing e programmazione'>
-    <meta name='theme-color'  content='#FFC0CB'>
-    <!--title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='author' content='Maria Lo Monaco'>
+    <meta name='description' content='Ciao, mi chiamo Maria Lo Monaco, studio marketing e programmazione'>
+    <meta name='theme-color' content='#FFC0CB'>
     <title>Maria Lo Monaco</title>
 
-    <!--favicon-->
-    <link rel='icon'          href='assets\img\favicon.ico' type='image/x-icon'>
+    <!-- Favicon -->
+    <link rel='icon' href='assets\img\favicon.ico' type='image/x-icon'>
 
-    <!--icon style link-->
-    <link rel='stylesheet'    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
-    <!--google fonts-->
-    <link rel="preconnect"    href="https://fonts.googleapis.com">
-    <link rel="preconnect"    href="https://fonts.gstatic.com" crossorigin>
+    <!-- Icon style link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
-    <!--bootstrap  css-->
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!--style css-->
+
+    <!-- Custom CSS -->
     <link rel='stylesheet' href='assets\css\styles.css' type='text/css'>
 
-    <!--open graph data-->
-    <meta property="og:image"       content="qui andra l'immagine">
-    <meta property="og:description" content="ciao, mi chiamo Maria Lo Monaco, studio marketing e programmazione">
-    <meta property='og:type'        content='website'>
-    <meta property="og:title"       content="Maria Lo Monaco">
-
-    <!--twitter card -->
-    <meta name='twitter:title'       content='Maria Lo Monaco'>
-    <meta name='twitter:description' content='ciao , mi chiamo Maria Lo Monaco, studio marketing e programmazione'>
-    <meta name='twitter:image'       content=  "qui immagine ">
-
-    <!--file js-->
-    <script src="assets\js\my-js-file.js" defer></script>
-    <!--file typed.js-->
+    <!-- Typed.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
- <style>
-      /* Modifica il colore di sfondo dell'intera pagina */
-      body {
-        background-color: #FFC0CB; /* Rosa chiaro */
-      }
+
+    <style>
+        body {
+            background-color: #FFC0CB; /* Rosa chiaro */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Navbar: Animazione hover */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FF69B4; /* Colore rosa brillante su hover */
+        }
+
+        /* Effetto Fade-in per i titoli */
+        h2, h3, h4, h5 {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Pulsanti personalizzati */
+        .btn-black {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-black:hover {
+            background-color: #FF69B4;
+            transform: translateY(-5px);
+        }
+
+        /* Sezione Chi Sono: Animazione immagine */
+        .start-image img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .start-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Barra di progressione */
+        .progress-bar {
+            background-color: black;
+            transition: width 0.5s ease-in-out;
+        }
+
+        /* Sezione contatti: Bottone WhatsApp */
+        .btn-whatsapp {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer: Effetto hover */
+        .footer a {
+            transition: transform 0.3s ease;
+        }
+
+        .footer a:hover {
+            transform: scale(1.1);
+        }
     </style>
-
-
-
 </head>
 
-
-
-  <body>
-
-  <!--navigation-->
-<nav class="navbar navbar-expand-md sticky-top index-nav" style="background-color: black;">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="index.html">Hello!</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active text-white" aria-current="page" href="#who-I-am">Chi sono</a>
-          <a class="nav-link active text-white" aria-current="page" href="#skills">Skills</a>
-          <a class="nav-link active text-white" aria-current="page" href="#istruzione">Istruzione</a>
-          <a class="nav-link active text-white" aria-current="page" href="#works">Porfolio</a>
-          <a class="nav-link active text-white" aria-current="page" href="#contacts">Contattami</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top index-nav" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">Hello!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" href="#who-I-am">Chi sono</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#skills">Skills</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#istruzione">Istruzione</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#works">Portfolio</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#contacts">Contattami</a>
+                </div>
+            </div>
         </div>
-       </div>
+    </nav>
+
+    <!-- Presentation Section -->
+    <div class='container first-section'>
+        <div class='row'>
+            <div class='col-md-6 text-center text-lg-left'>
+                <h3 class='font-weight-normal mt-3 presentation-text'>Ciao, mi chiamo</h3>
+                <h1 class='font-weight-normal md-3 presentation-text display-5'>Maria Lo Monaco</h1>
+                <div class='contacts-works-buttons mt-5'>
+                    <a href='#works' class='btn btn-black bg-black text-white'>Portfolio</a>
+                    <a href='#contacts' class='btn btn-black bg-black text-white'>Contattami</a>
+                </div>
+            </div>
+            <div class='col-md-6 start-image'>
+                <img src="assets\img\student-3464736.svg" alt="donna al computer" class='img-fluid'>
+            </div>
+        </div>
     </div>
-  </nav>
 
+    <!-- About Me Section -->
+    <h2 class='text-center display-4 text-black' id='who-I-am'>Chi sono</h2>
+    <div class="container mt-5">
+        <div class="row align-item-center">
+            <div class="col-md-6 text-center">
+                <ul class='list-presentation'>
+                    <li><span class='weight-presentation text-black'>Nome:</span> Maria</li>
+                    <li><span class='weight-presentation text-black'>Cognome:</span> Lo Monaco</li>
+                    <li><span class='weight-presentation text-black'>Luogo di nascita:</span> Monopoli (BA)</li>
+                    <li><span class='weight-presentation text-black'>Mail:</span> marialomonaco2001@gmail.com</li>
+                    <li><span class='weight-presentation text-black'>Interessi:</span> Economia, innovazione tecnologica, sviluppo personale</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <ul class='list-presentation'>
+                    <li><span class='weight-presentation text-black'>Data di nascita:</span> 03/09/2001</li>
+                    <li><span class='weight-presentation text-black'>Lingue:</span> Italiano, Inglese</li>
+                    <li><span class='weight-presentation text-black'>Occupazione:</span> Studentessa - Cameriera</li>
+                    <li><span class='weight-presentation text-black'>La mia filosofia:</span> Sono una persona che ama esplorare nuove forme di conoscenza. Abbraccio il minimalismo, per concentrarmi sui dettagli essenziali nei miei lavori. La mia frase preferita? "Prova ancora. Sbaglia ancora. Sbaglia meglio." – Samuel Beckett</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <div class='container footer bg-black mt-2'>
+        <div class="row">
+            <div class="col-md-4 text-center mt-3">
+                <a href='https://www.instagram.com/maria_lo_01/' target='_blank'>
+                    <img src="assets\img\instagram-3814048.svg" alt="Instagram" width='40px' height='40px' style='border-radius:20px'>
+                </a>
+            </div>
+            <div class="col-md-4 text-center mt-4">
+                <a href="mailto:marialomonaco2001@gmail.com" class='text-white mb-3'>marialomonaco2001@gmail.com</a>
+            </div>
+            <div class="col-md-4 text-center mt-4">
+                <p class='text-white'>Monopoli (Ba)</p>
+            </div>
+        </div>
+    </div>
 
-<!--two column section:presentation-->
-<div class='container first-section'>
-  <div class='row '>
-    <div class='col-md-6 text-center text-lg-left'>
-      <!--name-->
-      <h3 class='font-weight-normal mt-3 presentation-text'> Ciao, mi chiamo </h1>
-      <h1 class='font-weight-normal md-3 presentation-text display-5'> Maria Lo Monaco </h1>
-
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
 
         
 
-      <!--buttons-->
-      <div class='contacts-works-buttons mt-5'>
+    
+  
 
-      <a href='#works' class='btn btn-black bg-black text-white'> Porfolio</a>
-
-      <a href='#contacts' class='btn btn-black bg-black text-white'> contattami</a>
-     </div>
-    </div>
-      <div class='col-md-6 start-image'>
-        <img src="assets\img\student-3464736.svg" alt="donna al computer" class='img-fluid'>
-      </div>
-  </div>
-</div>
-
-<!--two columns section:who Iam-->
-
-<h2 class='text-center display-4 text-black' id='who-I-am'> Chi sono </h2>
-
-<div class="container mt-5">
-  <div class="row align-item-center">
-
-    <div class="col-md-6 text-center">
-    <ul class='list-presentation'>
-      <li> <span class='weight-presentation text-black'>Nome : </span>Maria </li>
-      <br>
-      <li><span class='weight-presentation text-black'> Cognome:</span> Lo Monaco </li>
-      <br>
-      <li><span class='weight-presentation text-black'> Luogo di nascita:</span> Monopoli (BA) </li>
-      <br>
-      <li> <span class='weight-presentation text-black'>mail:</span> marialomonaco2001@gmail.com </li>
-      <br>
-      <li> <span class='weight-presentation text-black'> Interessi: </span> Economia, innovazione tecnologica in ambito aziendale,sviluppo personale e professionale </li>
-
-
-
-     </ul>
-
-  </div>
-    <div class="col-md-6 text-center">
-      <ul class='list-presentation'>
-        <li><span class='weight-presentation text-black'> Data di nascita:</span> 03/09/2001 </li>
-        <br>
-        <li> <span class='weight-presentation text-black'>Lingue padroneggiate:</span>Italiano, inglese </li>
-        <br>
-        <li><span class='weight-presentation text-black'> Occupazione:</span> Studentessa - Cameriera </li>
-          <br>
-        <li><span class='weight-presentation text-black'> La mia filosofia: </span>Sono una persona a cui piace sperimentare e esplorare nuove
-        forma di conoscenza. Abbraccio la filosofia del minimalismo che mi permette, nei miei lavori, di dar importanza
-      ai dettagli fondamentali, tralasciando il superfluo.  La mia frase preferita?
-    <blockquote> Prova ancora. Sbaglia ancora. Sbaglia meglio <cite class='text-black'>Samuel Beckett</span> </blockquote> </li>
-
-
-
-
-       </ul>
-     </div>
-  </div>
-
-<!--who columns section: skills-->
-  <h2 class='text-center skills-part display-4 text-black' id='skills'> Skills</h2>
-  <br>
-  <div class='container mt-5'>
-    <div class='row align-item-center'>
-        <div class="col-md-6 text-center">
-          <h3 class='text-center color-skills text-black'> Hard Skills </h3>
-          <br>
-          <h5 class='text-start'> Html </h5>
-          <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<h5 class='text-start'> Css </h3>
-<div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<h5 class='text-start'> Bootstrap </h5>
-<div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<h5 class='text-start'> Copywriting </h5>
-<div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<h5 class='text-start'> Seo </h5>
-<div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-
-</div>
-  <div class="col-md-6 text-center">
-    <h3 class='text-center color-skills text-black '> Soft skills </h3>
-    <br>
-    <h5 class='text-start'> Problem solving </h5>
-    <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-  <h5 class='text-start'> Gestione del tempo </h3>
-  <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-  <h5 class='text-start'> Lavoro di squadra </h5>
-  <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-  <h5 class='text-start'> Flessibilità </h5>
-  <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-  <h5 class='text-start'> Comunicazione </h5>
-  <div class="progress" style="height: 4px;">
-  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-
-  </div>
-    </div>
-  </div>
-  <style>
-    /* Barra di progresso vuota (rosa chiaro) */
-    .progress {
-        background-color: #FFB6C1; /* Colore rosa chiaro per la parte vuota */
-        height: 4px;
-    }
-
-    /* Barra di progresso piena (nera) */
-    .progress-bar {
-        background-color: black; /* Colore nero per la parte piena */
-    }
-</style>
-
-<!--end skills bar-->
-
-<!--tho columns section:education-->
-
-<h2 class='istruction-title text-center display-4 mb-5 text-black' id='istruzione'> Istruzione </h2>
-<div class='container mt-5'>
-  <div class='row align-item-center'>
-    <div class='col-lg-6'>
-      <h4 class='mt-5 mb-4'> Percorso di studio </h4>
-      <div class='border-left border-black pt-2 pl-4 ml-2' >
-      <div class='position-relative ex-me mb-4'>
-        <i class='far fa-dot-circle text-black position-absolute' style="top: 2px; left: -35px; font-size:22px"> </i>
-        <h5 class='mb-1'>Liceo classico indirizzo Cambridge </h5>
-        <p class='mb-2'> <strong> Conversano, 2015-2020 </strong> </p>
-        <p class='mb-2'> Il latino e il greco mi hanno permesso di sviluppare un metodo di studio trasversale, idoneo per ogni ambito e disciplina</p>
-      </div>
-
-      <div class='position-relative ex-me mb-4'>
-        <i class='far fa-dot-circle text-black position-absolute' style="top: 2px; left: -35px; font-size:22px"> </i>
-        <h5 class='mb-1'> Marketing e comunicazione d'azienda </h5>
-        <p class='mb-2'> <strong> Univeristà degli studi di Bari, 2020- 2024 </strong> </p>
-        <p class='mb-2'> Lo studio della contabilità e della statistica, mi ha consentito di sviluppare conoscenze e competenze nell'ambito
-        nell'analisi dei dati. </p>
-      </div>
-
-      <div class='position-relative ex-me mb-4'>
-        <i class='far fa-dot-circle text-black position-absolute' style="top: 2px; left: -35px; font-size:22px"> </i>
-        <h5 class='mb-1'>Start2impact- data-analysis </h5>
-        <p class='mb-2'> <strong>  2021-in corso </strong> </p>
-        <p class='mb-2'> L'approccio prevalentemente pratico allo studio, mi consente di sviluppare competenze pratiche nell'ambito digitale.  </p>
-      </div>
-    </div>
-    </div>
-    <div class='col-lg-6'>
-      <h4 class='mt-5 mb-4'> Attività di volontariato </h4>
-      <div class='border-left border-black pt-2 pl-4 ml-2' >
-      <div class='position-relative ex-me mb-4'>
-        <i class='far fa-dot-circle text-black position-absolute' style="top: 2px; left: -35px; font-size:22px"> </i>
-        <h5 class='mb-1'>Croce rossa </h5>
-        <p class='mb-2'> <strong> Castellana/Monopoli, 2017-2020 </strong> </p>
-        <p class='mb-2'> Il volonariato presso la croce rossa, mi ha permesso si sviluppare abilità comunicative, nonchè di reattività e gestione del tempo. </p>
-      </div>
-
-      <div class='position-relative ex-me mb-4'>
-        <i class='far fa-dot-circle text-black position-absolute' style="top: 2px; left: -35px; font-size:22px"> </i>
-        <h5 class='mb-1'> Save the children </h5>
-        <p class='mb-2'> <strong>  2021- 2024 </strong> </p>
-        <p class='mb-2'> L'attività consisteva nell'aiutare dei ragazzi adoloscenti nell'ambito dell'economia aziendale. Questa esperienza mi ha consentito di sviluppare competenze nell0ambito della valutazione delle performance. </p>
-      </div>
-
-
-    </div>
-    </div>
-  </div>
-</div>
-
-<!--three columns section: works-->
-<h2 class=' text-center mt-5 display-4 text-black' id='works'>Portfolio </h2>
-<div class='container mt-5'>
-  <div class='row mb-5'>
-    <div class='col-md-6 col-lg-4 mt-5'>
-      <div class="card">
-    <img src="assets\img\paleeoliche.svg" class="card-img-top" alt="Immagine di pale eoliche" width='200px' height='120px'>
-    <div class="card-body">
-    <h5 class="card-title">3 Green Economy esempi: economia e sostenibilità</h5>
-    <p class="card-text">L'articolo illusatra cos'è la green economy , nonchè le sue principali applicazioni</p>
-    <a href="greeneconomy.html" class="btn btn-black text-white bg-black">Leggi</a>
-    </div>
-    </div>
-    </div>
-    <div class='col-md-6 col-lg-4  mt-5'>
-      <div class="card">
-    <img src="assets\img\earth.svg" class="card-img-top" alt="Immagine di pale eoliche" width='200px' height='117px'>
-    <div class="card-body">
-    <h5 class="card-title">5 incredibili modi in cui puoi salvare il pianeta</h5>
-    <p class="card-text">L'articolo illusatra 5 comportamenti sostenibili e al tempo stesso bizzarri .</p>
-    <a href="5incredibilimodiincuipuoisalvareilpianeta.html" class="btn btn-black text-white bg-black">Leggi</a>
-    </div>
-    </div>
-</div>
-    </div>
-    <div class='col-md-6 col-lg-4  mt-5'>
-    </div>
-
-</div>
-</div>
-
-<!--contacts section-->
-<div class='container text-center' id='contacts'>
-  <h2 class=' text-center mt-5 display-4 text-black' id='contacts'>contattami </h2>
-  <div class='row justify-content-center mt-5'>
-    <div class='col-md-10 col-lg-7'>
-      <form method="POST" action="mailto:marialomonaco2001@gmail.com" enctype="text/plain">
-<strong>Oggetto del messaggio:</strong><br />
-<input type="text" name="subject"><br />
-<strong>scrivi il tuo messaggio:</strong><br />
-<textarea name="body"></textarea><br />
-<input type="submit" value="Invia Email" class='mb-4 bg-black'>
-</form>
-       </div>
-   </div>
-</div>
-<h4 class='text-black text-center'> <strong> Oppure </strong> </h4>
-<div class='container text-center'>
-  <div class='row justify-content-center'>
-    <div class='col-md-10 col-lg-7 mt-4 mb-4'>
-      <a href="https://wa.me/3290388878"class='btn btn-white bg-black text-white'>
-  Contattami su WhatsApp
-</a>
-    </div>
-  </div>
-</div>
+ 
 
 
 
 
 
-<!--footer-->
-<div class='container footer bg-black mt-2'>
-  <div class="row">
-    <div class="col-md-4 text-center mt-3">
-      <a href='https://www.instagram.com/maria_lo_01/' target='_blank'> <img src="assets\img\instagram-3814048.svg" alt="Logo instagram" width='40px' height='40px' style='border-radius:20px'> </a>
-    </div>
-    <div class="col-md-4 text-center mt-4">
-      <a href="mailto:marialomonaco2001@gmail.com" class='text-white mb-3'> marialomonaco2001@gmail.com </a>
-    </div>
-    <div class="col-md-4 text-center mt-4">
-      <p class='text-white'>Monopoli (Ba)</p>
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
 
 
 
