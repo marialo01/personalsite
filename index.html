@@ -83,104 +83,10 @@
       <h3 class='font-weight-normal mt-3 presentation-text'> Ciao, mi chiamo </h1>
       <h1 class='font-weight-normal md-3 presentation-text display-5'> Maria Lo Monaco </h1>
 
-<style>
-        /* Impostazioni generali */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #222222;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-            flex-direction: column;
-        }
 
-        /* Titolo principale con animazione */
-        .iam {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #FF69B4; /* Colore rosa acceso per il titolo */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            animation: glow 1.5s ease-in-out infinite alternate;
-        }
 
-        /* Effetto glow per il titolo */
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4, 0 0 15px #FF69B4, 0 0 20px #FF69B4;
-            }
-            100% {
-                text-shadow: 0 0 10px #FF69B4, 0 0 20px #FF69B4, 0 0 30px #FF69B4, 0 0 40px #FF69B4;
-            }
-        }
+        
 
-        /* Impostazioni per il testo animato */
-        .text {
-            font-size: 2rem;
-            font-weight: 500;
-            color: #fff;
-            letter-spacing: 1px;
-            border-right: 3px solid #fff;
-            padding-right: 10px;
-            display: inline-block;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        /* Animazione di fade-in per il testo */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Personalizzazione del cursore */
-        .typed-cursor {
-            color: #FF69B4; /* Colore del cursore rosa */
-            font-weight: bold;
-            animation: blink 0.75s step-end infinite;
-        }
-
-        /* Animazione di blink per il cursore */
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Text element -->
-    <div class="iam"><strong>Sono</strong></div>
-    <div class="text"></div>
-
-    <!-- Script per il typing effect -->
-    <script>
-        var typing = new Typed(".text", {
-            strings: ["Curiosa", "Empatica", "Flessibile", "Analitica"],
-            typeSpeed: 100,
-            backSpeed: 40,
-            backDelay: 1000,
-            startDelay: 500,
-            loop: true,
-            showCursor: true,
-        });
-    </script>
       <!--buttons-->
       <div class='contacts-works-buttons mt-5'>
 
